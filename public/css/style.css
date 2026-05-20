@@ -53,7 +53,7 @@ img {
 
 
 .logo-mark {
-  width: 360px;
+  width: 125px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -81,14 +81,33 @@ nav a:hover {
   opacity: 0.7;
 }
 
-.hero  {
-  min-height: 88vh;
-  background: linear-gradient(135deg, var(--peach) 0%, #cf9077 45%, var(--peach-dark) 100%);
+.hero {
+  min-height: 92vh;
+
+  background:
+    radial-gradient(circle at top right, rgba(255,255,255,0.12), transparent 28%),
+    linear-gradient(
+      135deg,
+      var(--peach) 0%,
+      #cf9077 45%,
+      var(--peach-dark) 100%
+    );
+
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+
+  grid-template-columns:
+    minmax(420px, 620px)
+    minmax(420px, 720px);
+
+  justify-content: space-between;
+
   align-items: center;
+
   gap: 4rem;
-  padding: 8rem 7% 5rem;
+
+  padding: 8rem 6% 5rem;
+
+  overflow: hidden;
 }
 
 .hero-text {
@@ -115,9 +134,12 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: clamp(4rem, 6vw, 6.5rem);
+
   line-height: 0.92;
+
   letter-spacing: -0.07em;
+
   margin: 1rem 0 1.6rem;
 }
 
@@ -411,5 +433,52 @@ footer p {
 @media (max-width: 850px) {
   .about-wrap {
     grid-template-columns: 1fr;
+  }
+}
+
+.hero-text {
+  position: relative;
+  z-index: 5;
+}
+
+/* FINAL DESKTOP HERO FIX */
+@media (min-width: 981px) {
+  .site-header {
+    padding: 1.2rem 6%;
+  }
+
+  .logo-mark {
+    width: 135px;
+    height: auto;
+  }
+
+  .hero {
+    min-height: 88vh;
+    display: grid;
+    grid-template-columns: minmax(420px, 0.9fr) minmax(420px, 0.8fr);
+    gap: 3.5rem;
+    align-items: center;
+    padding: 8rem 6% 5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(4rem, 5.8vw, 6.2rem);
+    line-height: 0.92;
+    letter-spacing: -0.06em;
+  }
+
+  .hero-text {
+    max-width: 620px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .hero-image-card {
+    max-width: 620px;
+    justify-self: end;
+  }
+
+  .hero-image-card img {
+    height: 440px;
   }
 }

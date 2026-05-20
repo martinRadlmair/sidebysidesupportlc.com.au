@@ -440,3 +440,45 @@ footer p {
   position: relative;
   z-index: 5;
 }
+
+/* FINAL DESKTOP HERO FIX */
+@media (min-width: 981px) {
+  .site-header {
+    padding: 1.2rem 6%;
+  }
+
+  .logo-mark {
+    width: 135px;
+    height: auto;
+  }
+
+  .hero {
+    min-height: 88vh;
+    display: grid;
+    grid-template-columns: minmax(420px, 0.9fr) minmax(420px, 0.8fr);
+    gap: 3.5rem;
+    align-items: center;
+    padding: 8rem 6% 5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(4rem, 5.8vw, 6.2rem);
+    line-height: 0.92;
+    letter-spacing: -0.06em;
+  }
+
+  .hero-text {
+    max-width: 620px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .hero-image-card {
+    max-width: 620px;
+    justify-self: end;
+  }
+
+  .hero-image-card img {
+    height: 440px;
+  }
+}
