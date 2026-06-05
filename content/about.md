@@ -1,6 +1,5 @@
 +++
 date = '2026-05-19T16:55:20+09:30'
-draft = true
 title = "About Natalie"
 +++
 ---
