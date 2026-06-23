@@ -1,3 +1,7 @@
 baseURL = "https://www.sidebysidesupportlc.com.au/"
-languageCode = "en-au"
-title = "Side By Side Support"
+locale = "en-AU"
+title = "Side By Side Support | NDIS Support Coordination Limestone Coast"
+
+[params]
+description = "Independent NDIS Support Coordination, Specialist Support Coordination, Case Management and Therapeutic Mentoring across Mount Gambier and the Limestone Coast."
+keywords = ["NDIS", "Support Coordination", "Specialist Support Coordination", "Case Management", "Mount Gambier", "Limestone Coast", "NDIS Support Coordinator"]
